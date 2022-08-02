@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Nunito:wght@300&family=Raleway:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", cursive;
+  color: #333333;
+  background-color: #fafafa;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 3rem;
+  margin: 20px;
+  height: 10%;
+  background-color: #fafafa;
+  font-size: 2rem;
+}
+.navigation__button {
+  padding: 1.5rem;
+  color: #272644;
+}
+.navigation__name {
+  color: #272644;
+}
+.navigation__buttons {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1028px) {
+  .navigation__buttons {
+    font-size: 1rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .navigation__name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 675px) {
+  .button {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navigation__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tech-skills {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.tech-skills__tech-text {
+  padding: 0px 400px;
+  color: #8C9CB1;
+}
+.tech-skills__subtitle {
+  padding: 0 0.2em;
+  box-shadow: inset 0 -0.6em #ddf5f3;
+  color: #272644;
+}
+.tech-skills__icons {
+  display: flex;
+  column-gap: 100px;
+  justify-content: space-evenly;
+  padding: 0px 100px;
+}
+.tech-skills__skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-skills__text {
+  color: #8C9CB1;
+}
+
+.projects-h2 {
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px 100px 0px;
+  color: #272644;
+  font-size: 25px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+}
+.projects__project-box {
+  width: 400px;
+  height: 300px;
+  background-color: #ddf5f3;
+}
+.projects__project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects__proj-tool {
+  font-size: 15px;
+  font-weight: 900;
+  color: #BAE8EA;
+  padding-top: 10px;
+}
+.projects__proj-text {
+  text-align: center;
+  padding-top: 10px;
+  color: #8C9CB1;
+}
+.projects__proj-sect-title {
+  color: #272644;
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+.projects__cod-prev-icons {
+  padding-top: 10px;
+}
+.projects__subtitle {
+  color: #272644;
+  box-shadow: inset 0 -0.6em #ddf5f3;
+}
+
+@media screen and (max-width: 1372px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about-me {
+  height: 65vh;
+  padding: 50px 100px;
+  background-color: #ddf5f3;
+  display: flex;
+  justify-content: space-between;
+}
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddf5f3;
+  padding: 50px;
+  justify-content: center;
+}
+.about-me__title {
+  color: #272644;
+  background-color: #ddf5f3;
+  font-size: 30px;
+  font-weight: 900;
+}
+.about-me__p {
+  background-color: #ddf5f3;
+  width: 800px;
+  color: #8C9CB1;
+}
+.about-me__cartoon {
+  background-color: #ddf5f3;
+  display: flex;
+  align-items: center;
+}
+.about-me__cartoon-img {
+  height: 40vh;
+  width: 500px;
+  background-color: #ddf5f3;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #272644;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.footer__content {
+  background-color: #272644;
+  color: #fafafa;
+}
+.footer__icons {
+  background-color: #272644;
+}
+.footer__link {
+  background-color: #272644;
+}
+
+.button {
+  border: 2px solid #272644;
+  background-color: #BAE8EA;
+  border-radius: 5px;
+  min-width: 100px;
+  color: #272644;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.header {
+  margin: 100px 100px 100px 250px;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 2fr auto;
+}
+.header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__main-heading {
+  display: flex;
+  flex-direction: column;
+}
+.header__main-heading--name {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.header__work-button {
+  text-align: center;
+  max-width: 200px;
+  min-width: 175px;
+  height: 2rem;
+  padding-top: 0.25rem;
+}
+.header__mypic {
+  height: 80%;
+  width: auto;
+  margin-block: auto;
+  border-radius: 10px;
+}
+.header__subheading {
+  color: #272644;
+}
+.header .header__myphoto {
+  margin-right: 400px;
+  position: relative;
+}
+.header .header__myphoto .img-circle {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+.header .header__myphoto .img-squig {
+  position: absolute;
+  bottom: 100px;
+  right: -100px;
+}
+
+.text {
+  color: #8C9CB1;
+}
+
+.fa-brands {
+  color: #BAE8EA;
+}
+
+h2.subtitle {
+  font-size: 25px;
+}
+
+.underline {
+  padding: 0 0.2em;
+  box-shadow: inset 0 -0.6em #ddf5f3;
+  color: #272644;
+}
+
+.cartoon-img {
+  height: 300px;
+  width: 300px;
+  background-color: #ddf5f3;
+}
+
+.section-2 {
+  padding: 0px 100px;
+}

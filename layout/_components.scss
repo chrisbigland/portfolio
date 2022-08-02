@@ -1,0 +1,9 @@
+@import '../abstracts/variables';
+
+.button {
+    border: 2px solid #272644;
+    background-color: #BAE8EA;
+    border-radius: 5px;
+    min-width: 100px;
+    color: $color-secondary;
+}
