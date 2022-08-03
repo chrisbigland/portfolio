@@ -68,12 +68,14 @@
     &__tech-text {
         padding: 0px 400px;
         color: $color-main-text;
+        font-size: 1rem;
     }
 
     &__subtitle {
     padding:0 .2em;
     box-shadow: inset 0 -.6em $color-primary;
     color: $color-secondary;
+    font-size: 1.5rem;
     }
 
     &__icons {
@@ -99,7 +101,7 @@
     justify-content: center;
     margin: 200px 0px 100px 0px;
     color: $color-secondary;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .projects {

@@ -62,11 +62,13 @@
 .tech-skills__tech-text {
   padding: 0px 400px;
   color: #8C9CB1;
+  font-size: 1rem;
 }
 .tech-skills__subtitle {
   padding: 0 0.2em;
   box-shadow: inset 0 -0.6em #ddf5f3;
   color: #272644;
+  font-size: 1.5rem;
 }
 .tech-skills__icons {
   display: flex;
@@ -88,7 +90,7 @@
   justify-content: center;
   margin: 200px 0px 100px 0px;
   color: #272644;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .projects {
@@ -256,6 +258,29 @@ a:visited {
   right: -100px;
 }
 
+@media screen and (max-width: 1028px) {
+  .header__content {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .header__mypic {
+    max-width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .header__img-circle {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .header__img-squig {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .text {
   color: #8C9CB1;
 }

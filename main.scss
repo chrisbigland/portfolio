@@ -73,13 +73,40 @@ a:visited {
 
 }
 
-// @media screen and (max-width: 1268px) {
-//     .header {
-//     &__work-button {
-//         font-size: 1rem;
-//     }
-//     }
-// }
+@media screen and (max-width: 1028px) {
+    .header {
+        &__content {
+        max-width: 50%;
+    }
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .header {
+        &__mypic {
+        max-width: 200px;
+        height: auto;
+    }
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .header {
+        &__img-circle {
+        max-width: 100%;
+        height: auto;
+    }
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .header {
+        &__img-squig {
+        max-width: 100%;
+        height: auto;
+    }
+}
+}
 
 .text {
     color: $color-main-text;
