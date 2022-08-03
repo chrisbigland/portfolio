@@ -76,7 +76,7 @@ a:visited {
 @media screen and (max-width: 1028px) {
     .header {
         &__content {
-        max-width: 50%;
+        max-width: 65%;
     }
     }
 }
@@ -90,14 +90,24 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 1028px) {
-    .header {
-        &__img-circle {
-        max-width: 100%;
-        height: auto;
-    }
-    }
-}
+// @media screen and (max-width: 1028px) {
+//     .header {
+//         &__img-circle {
+//         max-width: 100%;
+//         height: auto;
+//     }
+//     }
+// }
+
+// @media screen and (max-width: 1028px) {
+//     .header {
+//         &__img-squig {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
+// }
+
 
 @media screen and (max-width: 1028px) {
     .header {
@@ -106,6 +116,14 @@ a:visited {
         height: auto;
     }
 }
+}
+
+@media screen and (max-width: 690px) {
+    .header {
+        &__work-button {
+            height: auto;
+        }
+    }
 }
 
 .text {

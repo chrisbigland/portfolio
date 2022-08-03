@@ -96,12 +96,51 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .tech-skills {
+        &__tech-text {
+        padding: 0px 325px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tech-skills {
+        &__tech-text {
+        padding: 0px 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tech-skills {
+        &__tech-text {
+        padding: 0px 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .tech-skills {
+        &__tech-text {
+        padding: 0px 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .tech-skills {
+        &__tech-text {
+        padding: 0px 20px;
+        }
+    }
+}
+
 .projects-h2 {
     display: flex;
     justify-content: center;
     margin: 200px 0px 100px 0px;
     color: $color-secondary;
-    font-size: 1.5rem;
 }
 
 .projects {
@@ -151,6 +190,7 @@
     &__subtitle {
         color: $color-secondary;
         box-shadow: inset 0 -.6em $color-primary;
+        font-size: 1.5rem;
     }
 }
 
