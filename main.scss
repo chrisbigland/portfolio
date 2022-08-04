@@ -17,6 +17,8 @@ a:visited {
     grid-template-columns: 2fr auto;
 
 
+
+
     div {
         display: flex;
         flex-direction: column;
@@ -78,17 +80,22 @@ a:visited {
         &__content {
         max-width: 65%;
     }
-    }
-}
 
-@media screen and (max-width: 1028px) {
-    .header {
-        &__mypic {
+    &__mypic {
         max-width: 200px;
         height: auto;
     }
+
     }
 }
+
+@media screen and (max-width: 630px) {
+    .header {
+        margin: 200px 50px 50px 50px;
+    }
+}
+
+
 
 // @media screen and (max-width: 1028px) {
 //     .header {
@@ -133,10 +140,6 @@ a:visited {
 
 .fa-brands {
     color: #BAE8EA;
-}
-
-h2.subtitle {
-    font-size: 25px;
 }
 
 .underline {
