@@ -83,8 +83,8 @@
         display: flex;
         column-gap: 10%;
         justify-content: space-evenly;
-        width: 1200px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 1200px;
         // padding: 0px 100px;
     }
 
@@ -210,8 +210,19 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .projects {
+        &__project-box {
+            width: 100%;
+        }
+    //     &__section-2 {
+    //         padding: 0px 0px;
+    // }
+}
+}
+
 // @media screen and (max-width: 550px) {
-//     .section-2 {
+//     
 //         width: 100%
 //     }
 // }
@@ -276,6 +287,8 @@
         &__cartoon-img {
             height: 20vh;
         }
+
+        
     }
 }
 
@@ -289,6 +302,22 @@
 
         &__title {
             font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-me {
+        &__content {
+            padding: 0px;
+    }
+}
+}
+
+@media screen and (max-width: 350px) {
+    .about-me {
+        &__cartoon-img {
+            height: 15vh;
         }
     }
 }
@@ -309,8 +338,9 @@
 
 
 .footer {
-    height: 100px;
+    min-height: 100px;
     width: 100%;
+    max-width: 100%;
     background-color: $color-secondary;
     display: flex;
     justify-content: space-between;
@@ -321,12 +351,26 @@
         color: $color-white;
     }
 
+    &__content-icon {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+
     &__icons {
         background-color: $color-secondary;
     }
 
     &__link {
         background-color: $color-secondary;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .footer {
+        &__content-icon {
+            width: 30px;
+            height: auto;
+        }
     }
 }
 

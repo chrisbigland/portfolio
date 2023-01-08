@@ -7,6 +7,7 @@
     <title>Chris Bigland Junior Web Developer</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/414a16d597.js" crossorigin="anonymous"></script>
+    <script src="index.js" async defer></script>
 </head>
 
 <div>
@@ -14,8 +15,8 @@
         <div class="navigation__name">Chris Bigland</div>
         <div class="navigation__buttons">
             <a class="navigation__button" href="#">Home</a>
-            <a class="navigation__button" href="#">About</a>
-            <a class="navigation__button" href="#">Projects</a>
+            <a class="navigation__button" href="#about">About</a>
+            <a class="navigation__button" href="#projects">Projects</a>
             <a href="#" class="button navigation__button navigation__button-git">Get in Touch</a>
         </div>
     </nav>
@@ -23,10 +24,10 @@
 <header class="header">
     <div class="header__content">
         <h1 class="header__main-heading">
-            <span class="header__main-header header__main-heading--name text">Hi! I'm Chris Bigland</span>
+            <span class="header__main-header header__main-heading--name text">Hi, I'm Chris!</span>
             <span class="header__subheading">A <span class="underline">Junior Software Developer</span> based in the UK.</span>
         </h1>
-        <a href="#" class="button header__work-button">Take a look at my work</a>
+        <a href="#projects" class="button header__work-button">Take a look at my work</a>
     </div>  
     <div class="header__myphoto">
         <img src="./images/me.jpeg" alt="photo of Chris Bigland" class="header__mypic">
@@ -38,10 +39,7 @@
     <section class="tech-skills">
         <h2 class="tech-skills__title">Technical Skills</h2>
         
-        <p class="tech-skills__tech-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quis id consequuntur, minima, soluta quisquam iusto
-            dignissimos debitis ratione voluptatem enim mollitia sunt 
-            pariatur architecto possimus in officia voluptatibus ut esse.</p>
+        <p class="tech-skills__tech-text">I acquired the below technical skills within the self-paced coding course at _nology, Bristol and am currently seeking opportunities to apply these within a role alongside developing my skill set further.</p>
     
         <div class="tech-skills__icons">
             <div class="tech-skills__skill-icon">
@@ -83,13 +81,13 @@
         </div>
     </section>
 
-    <section class="section-2">
+    <section class="section-2" >
 
-        <div class="projects__title-case">
+        <div class="projects__title-case" id="projects">
         <h2 class="projects__title">My Projects</h2></div>
 
 
-        <div class="projects">
+        <div class="projects" >
 
             <div class="projects__client-project projects__project">
                 <span class="projects__project-box"></span>
@@ -170,7 +168,7 @@
             </div>
         </div>
     </section>
-    <div class="about-me">
+    <div class="about-me" id="about">
         <div class="about-me__content">
             <span class="about-me__title">About Me</span>
             <br>
@@ -191,19 +189,19 @@
                 Similique consequatur provident repellat numquam odio in animi nam voluptatem quae!
             </p>
         </div>
-        <div class="about-me__cartoon">
+        <!-- <div class="about-me__cartoon">
             <img class="about-me__cartoon-img" src="./images/working-img.svg" alt="cartoon image of man working on laptop">
-        </div>
+        </div> -->
     </div>
 
     <Footer class="footer">
         <span class="footer__content">christopherbigland@gmail.com</span>
         <span class="footer__content">All Rights Reserved. 2022.</span>
-        <span class="footer__icons">
-            <a class="footer__link" href="#"><img class="footer__content" src="./images/cv-icon.svg" alt="CV icon"></a>
-            <a class="footer__link" href="#"><img class="footer__content" src="./images/github-icon.svg" alt="GitHub icon"></a>
-            <a class="footer__link" href="#"><img class="footer__content" src="./images/linkedin-icon.svg" alt="LinkedIn icon"></a>
-        </span>
+        <div class="footer__icons">
+            <a class="footer__link" href="#"><img class="footer__content-icon" src="./images/cv-icon.svg" alt="CV icon"></a>
+            <a class="footer__link" href="#"><img class="footer__content-icon" src="./images/github-icon.svg" alt="GitHub icon"></a>
+            <a class="footer__link" href="#"><img class="footer__content-icon" src="./images/linkedin-icon.svg" alt="LinkedIn icon"></a>
+        </div>
     </Footer>
 </body>
 </html>
