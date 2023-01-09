@@ -9,6 +9,40 @@ a:visited {
     text-decoration: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", cursive;
+    color: #333333;
+    background-color: #fafafa;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 3rem;
+    margin: 20px;
+    height: 10%;
+    background-color: #fafafa;
+    font-size: 2rem;
+  }
+  .navigation__button {
+    padding: 1.5rem;
+    color: #272644;
+  }
+  .navigation__name {
+    color: #272644;
+  }
+  .navigation__buttons {
+    display: inline-block;
+  }
+
 
 .header {
     margin: 100px 100px 100px 250px;
@@ -19,7 +53,7 @@ a:visited {
 
 
 
-    div {
+    &__div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -55,7 +89,7 @@ a:visited {
         color: $color-secondary;
     }
 
-    .header__myphoto {
+    &__myphoto {
         margin-right: 400px;
         position: relative;
 
@@ -74,6 +108,43 @@ a:visited {
     }
 
 }
+
+.about-me {
+    height: 65vh;
+    padding: 50px 100px;
+    width: 100%;
+    background-color: #ddf5f3;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-me__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddf5f3;
+    padding: 50px;
+    justify-content: center;
+    width: 75%;
+  }
+  .about-me__title {
+    color: #272644;
+    background-color: #ddf5f3;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .about-me__p {
+    background-color: #ddf5f3;
+    color: #8C9CB1;
+    font-size: 1rem;
+  }
+  .about-me__cartoon {
+    background-color: #ddf5f3;
+    display: flex;
+    align-items: center;
+  }
+  .about-me__cartoon-img {
+    height: 40vh;
+    background-color: #ddf5f3;
+  }
 
 @media screen and (max-width: 1028px) {
     .header {
@@ -95,6 +166,43 @@ a:visited {
     }
 }
 
+@media screen and (max-width: 980px) {
+    .about-me {
+      padding: 0px;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .about-me {
+      padding: 0px;
+    }
+    .about-me__p {
+      font-size: 0.75rem;
+    }
+    .about-me__cartoon-img {
+      height: 20vh;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .about-me {
+      padding: 0px;
+    }
+    .about-me__p {
+      font-size: 0.5rem;
+    }
+    .about-me__title {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .about-me__content {
+      padding: 0px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .about-me__cartoon-img {
+      height: 15vh;
+    }
+  }
 
 
 // @media screen and (max-width: 1028px) {
@@ -133,9 +241,163 @@ a:visited {
     }
 }
 
+@media screen and (max-width: 1028px) {
+    .navigation__buttons {
+      font-size: 1rem;
+      height: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .navigation__name {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .button {
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .navigation__buttons {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .tech-skills {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tech-skills__tech-text {
+    padding: 0px 400px;
+    color: #8C9CB1;
+    font-size: 1rem;
+  }
+  .tech-skills__title {
+    padding: 0 0.2em;
+    box-shadow: inset 0 -0.6em #ddf5f3;
+    color: #272644;
+    font-size: 1.5rem;
+  }
+  .tech-skills__icons {
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .tech-skills__skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-skills__text {
+    color: #8C9CB1;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .tech-skills__tech-text {
+      padding: 0px 325px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .tech-skills__tech-text {
+      padding: 0px 250px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .tech-skills__tech-text {
+      padding: 0px 200px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .tech-skills__tech-text {
+      padding: 0px 100px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .tech-skills__tech-text {
+      padding: 0px 20px;
+    }
+  }
+
 .text {
     color: $color-main-text;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+  .projects__project-box {
+    width: 400px;
+    height: 300px;
+    background-color: #ddf5f3;
+  }
+  .projects__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__proj-tool {
+    font-size: 15px;
+    font-weight: 900;
+    color: #BAE8EA;
+    padding-top: 10px;
+  }
+  .projects__proj-text {
+    text-align: center;
+    padding-top: 10px;
+    color: #8C9CB1;
+  }
+  .projects__proj-sect-title {
+    color: #272644;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 10px;
+  }
+  .projects__cod-prev-icons {
+    padding-top: 10px;
+  }
+  .projects__title {
+    color: #272644;
+    box-shadow: inset 0 -0.6em #ddf5f3;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    margin: 200px 0px 100px 0px;
+    color: #272644;
+  }
+  .projects__title-case {
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 1372px) {
+    .projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 964px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .projects__project-box {
+      width: 100%;
+    }
+  }
 
 
 .fa-brands {
@@ -159,3 +421,48 @@ a:visited {
 .section-2 {
     padding: 0px 100px;
 }
+
+.footer {
+    min-height: 100px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #272644;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .footer__content {
+    background-color: #272644;
+    color: #fafafa;
+  }
+  .footer__content-icon {
+    background-color: #272644;
+    color: #fafafa;
+  }
+  .footer__icons {
+    background-color: #272644;
+  }
+  .footer__link {
+    background-color: #272644;
+  }
+  
+  @media screen and (max-width: 675px) {
+    .footer__content-icon {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+
+  .button {
+    border: 2px solid #272644;
+    background-color: #BAE8EA;
+    border-radius: 5px;
+    min-width: 100px;
+    color: #272644;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
